@@ -1,0 +1,27 @@
+#container {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+#sketchGrid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    width: 500px;
+    height: 500px;
+}
+
+#sketchDiv {
+    justify-self: stretch;
+    align-self: stretch;
+    border: solid;
+    border-width: .5px;
+    border-color: gray;
+}
+
+.hover {
+    background-color: black;
+}
