@@ -5,13 +5,14 @@
 }
 
 #sketchGrid {
+    width: 500px;
+    height: 500px;
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(16, 1fr);
-    width: 500px;
-    height: 500px;
+
 }
 
 #sketchDiv {
