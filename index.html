@@ -4,16 +4,27 @@
 <head>
     <meta charset="utf-8">
     <title>My Project</title>
-
-    <li><button id="reset">Reset</button></li>
-    
+    <h3>ETCH-A-SKETCH</h3>
 </head>
+<div class="bothSides" style="display: flex;">
+    <!-- Left content -->
+    <div class="leftSide" style="flex: 1;">
+        <button id="reset">Reset</button>
+        <button id="color">Colorful</button>
+        <button id="blackAndWhite">Black and White</button>
+        <div>test</div>
+    </div>
 
-<body>
-    <p>Page Top</p>
-    <div id="container"><div id="sketchGrid"></div></div>
-    <script src="etch-a-sketch.js"></script>
+    <!-- Right content -->
+    <div class="rightSide" style="flex: 2;">
+        <body>
+            <p>Page Top</p>
+            <div id="container"><div id="sketchGrid"></div></div>
+            <script src="etch-a-sketch.js"></script>
+        
+        </body>
+    </div>
+</div>
 
-</body>
 <link href="stylesheet.css" rel="stylesheet">
 </html>
