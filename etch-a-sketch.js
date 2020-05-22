@@ -3,10 +3,11 @@ const resetButton = document.getElementById('reset');
 const blackButton = document.getElementById('blackAndWhite');
 const colorButton = document.getElementById('color');
 var dimension = 16;
+var cellColor = 'black';
 
 
-//colorButton.addEventListener('click', cellBlack);
-//blackButton.addEventListener('click', cellColorful);
+colorButton.addEventListener('click', () => {cellColor = 'rainbow'; console.log(cellColor);});
+blackButton.addEventListener('click', () => {cellColor = 'black'; console.log(cellColor);});
 
 function createGrid(){ 
   for(x=0; x<dimension*dimension; x++) {
@@ -20,17 +21,17 @@ function createGrid(){
 }
 
 //Creating hover over effect
-function changeColor(e) {
+function changeColor() {
     const cell = event.target;
-    if(cellColorful=true && cell.id != 'used'){
+    if (cellColor == 'rainbow' && cell.class != 'used'){
       cell.style.setProperty('background-color', getRandomColor());
-      cell.setAttribute('id', 'used');
-      console.log(cellColorful);
+      cell.setAttribute('class', 'used');
+      console.log(cellColor);
       }
     else {
-    cell.style.background = 'black';
-    console.log(cellColorful);
-    }
+      cell.style.background = 'black';
+      console.log(cellColor);
+      }
 }
 
 function getRandomColor() {
@@ -49,14 +50,11 @@ function resetColor() {
     for (i = 0; i < sketchNode.length; i++) {
       sketchNode[i].style.background = "white";
     }
-    dimension = prompt('How many dimension?');
+    dimension = prompt('Please enter a grid size between 1 and 100');
     console.log(dimension);
-
-    if (dimension > 80) {
-      dimension = prompt('How many dimension?');
-    }
+     if (dimension > 100 || dimension < 2) {
+        resetColor();
+      }
     createGrid();
   }
-
-
-  createGrid();
+createGrid();
