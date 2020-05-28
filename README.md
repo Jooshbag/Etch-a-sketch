@@ -1,40 +1,38 @@
-This is my first major project from Odin Project. I will be creating an 'Etch-a-sketch' site following the steps below. I will update this README once I finish to document my steps and how I completed it. 
+Etch-A-Sketch
+=============
 
+A browser "sketchpad" to create pixal artwork.
 
+General info
+------------
 
-    Follow the instructions atop Odin’s Google Homepage project to setup a git repository for this project.
+This was my first major project that mostly unitilized DOM manipulation to alter HTML and add elements to create the "sletchpad" 
 
-    Create a webpage with a 16x16 grid of square divs
+Technologies
+------------
 
-        Create the divs using JavaScript… don’t try making them by hand with copy and pasting in your html file!
-        Best to put your grid squares inside another “container” div (that one can go directly in your html)
-        There are several different ways to make the divs appear as a grid (versus just one on each line) feel free to use any or play with each of them:
-            float/clear
-            inline-block
-            flexbox
-            CSS Grid
+* Html
+* Javascript
+* CSS
 
-        Be careful with borders and margins, they can adjust the size of the squares!
-        “OMG, Why isn’t my grid being created???”
-            Open your browser’s developer tools
-            Check if there are any errors in the JavaScript console
-            Check your “elements” pane to see if the elements have actually shown up but are somehow hidden.
-            Go willy-nilly and add console.log statements in your JavaScript to see if it’s actually being loaded.
+List of features ready and TODOs for future development
 
-    Set up a “hover” effect so that the grid divs change color when your mouse passes over them, leaving a (pixelated) trail through your grid like a pen would.
-        Hint: “hovering” is what happens when your mouse enters a div and ends when your mouse leaves it.. you can set up event listeners for either of those events as a starting point.
+* Able to create pixal art with your mouse hover
+* Select Black or Rainbow colors to sketch with
+* Can reset canvas with reset button and change sketchpad sizw
 
-        There are multiple ways to change the color of the divs, including:
-            adding a new class to the div
-            changing the div’s background color using JavaScript.
+To-do list:
+-----------
 
-    Add a button to the top of the screen which will clear the current grid and send the user a popup asking for how many squares per side to make the new grid. Once entered the new grid should be generated in the same total space as before (e.g. 960px wide) and now you’ve got a new sketch pad.
+* Add a color picker to select any color
+* Split the reset button into resize and clear buttons.  
 
-        Research button tags in HTML and how you can make a JavaScript function run when one is clicked.
-        Also check out prompts
-        You should be able to enter 64 and have a brand new 64x64 grid pop up without changing the total amount of pixels used
+Status
+-------
 
-    (Optional): Instead of just changing the color of your grid from black to white (for example) have each pass through it with the mouse change to a completely random RGB value. Then try having each pass just add another 10% of black to it so that only after 10 passes is the square completely black.
+Project is: in progress
 
-    Push your project to GitHub!
+Contact
+-------
 
+Created by @j-danielson - feel free to contact me!
